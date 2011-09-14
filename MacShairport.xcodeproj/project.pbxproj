@@ -24,7 +24,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		965176A21419726F007AD353 /* Menulet.m in Sources */ = {isa = PBXBuildFile; fileRef = 965176A11419726F007AD353 /* Menulet.m */; };
-		966C5A6A14188D6000D55EB1 /* airtunes-round.icns in Resources */ = {isa = PBXBuildFile; fileRef = 966C5A6914188D6000D55EB1 /* airtunes-round.icns */; };
+		966C5A6A14188D6000D55EB1 /* shairport-round.icns in Resources */ = {isa = PBXBuildFile; fileRef = 966C5A6914188D6000D55EB1 /* shairport-round.icns */; };
 		96C17E1B1420618100284AA4 /* shairport_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C17E1A1420618100284AA4 /* shairport_22.png */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +73,7 @@
 		8D1107320486CEB800E47090 /* MacShairport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacShairport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965176A01419726F007AD353 /* Menulet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menulet.h; sourceTree = "<group>"; };
 		965176A11419726F007AD353 /* Menulet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menulet.m; sourceTree = "<group>"; };
-		966C5A6914188D6000D55EB1 /* airtunes-round.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "airtunes-round.icns"; sourceTree = "<group>"; };
+		966C5A6914188D6000D55EB1 /* shairport-round.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "shairport-round.icns"; sourceTree = "<group>"; };
 		96C17E1A1420618100284AA4 /* shairport_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shairport_22.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				96C17E1A1420618100284AA4 /* shairport_22.png */,
-				966C5A6914188D6000D55EB1 /* airtunes-round.icns */,
+				966C5A6914188D6000D55EB1 /* shairport-round.icns */,
 				8870425D135DF0D900C2092A /* Extensions */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -252,7 +252,7 @@
 				887042DC135DFCAD00C2092A /* airport_rsa in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				889B03C413653B730030E6CC /* MainMenu.xib in Resources */,
-				966C5A6A14188D6000D55EB1 /* airtunes-round.icns in Resources */,
+				966C5A6A14188D6000D55EB1 /* shairport-round.icns in Resources */,
 				96C17E1B1420618100284AA4 /* shairport_22.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
