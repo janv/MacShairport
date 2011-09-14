@@ -23,8 +23,9 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		966C5A6714188B3B00D55EB1 /* airtunes-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 966C5A6614188B3B00D55EB1 /* airtunes-round.png */; };
+		965176A21419726F007AD353 /* Menulet.m in Sources */ = {isa = PBXBuildFile; fileRef = 965176A11419726F007AD353 /* Menulet.m */; };
 		966C5A6A14188D6000D55EB1 /* airtunes-round.icns in Resources */ = {isa = PBXBuildFile; fileRef = 966C5A6914188D6000D55EB1 /* airtunes-round.icns */; };
+		96C17E1B1420618100284AA4 /* shairport_22.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C17E1A1420618100284AA4 /* shairport_22.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,8 +71,10 @@
 		88DF8CA1135D326200E1AF2C /* hairtunes */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hairtunes; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MacShairport-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MacShairport-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MacShairport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacShairport.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		966C5A6614188B3B00D55EB1 /* airtunes-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airtunes-round.png"; sourceTree = "<group>"; };
+		965176A01419726F007AD353 /* Menulet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menulet.h; sourceTree = "<group>"; };
+		965176A11419726F007AD353 /* Menulet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menulet.m; sourceTree = "<group>"; };
 		966C5A6914188D6000D55EB1 /* airtunes-round.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "airtunes-round.icns"; sourceTree = "<group>"; };
+		96C17E1A1420618100284AA4 /* shairport_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shairport_22.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				889B03BC13653B560030E6CC /* MSShairportServer.m */,
 				889B03B913653B560030E6CC /* MSShairportConnection.h */,
 				889B03BA13653B560030E6CC /* MSShairportConnection.m */,
+				965176A01419726F007AD353 /* Menulet.h */,
+				965176A11419726F007AD353 /* Menulet.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -132,8 +137,8 @@
 		29B97314FDCFA39411CA2CEA /* MacShairport */ = {
 			isa = PBXGroup;
 			children = (
+				96C17E1A1420618100284AA4 /* shairport_22.png */,
 				966C5A6914188D6000D55EB1 /* airtunes-round.icns */,
-				966C5A6614188B3B00D55EB1 /* airtunes-round.png */,
 				8870425D135DF0D900C2092A /* Extensions */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -247,8 +252,8 @@
 				887042DC135DFCAD00C2092A /* airport_rsa in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				889B03C413653B730030E6CC /* MainMenu.xib in Resources */,
-				966C5A6714188B3B00D55EB1 /* airtunes-round.png in Resources */,
 				966C5A6A14188D6000D55EB1 /* airtunes-round.icns in Resources */,
+				96C17E1B1420618100284AA4 /* shairport_22.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +272,7 @@
 				889B03BD13653B560030E6CC /* MacShairportAppDelegate.m in Sources */,
 				889B03BE13653B560030E6CC /* MSShairportConnection.m in Sources */,
 				889B03BF13653B560030E6CC /* MSShairportServer.m in Sources */,
+				965176A21419726F007AD353 /* Menulet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
