@@ -87,7 +87,7 @@ static SSCrypto *crypto = nil;
 #pragma mark NSNetServiceDelegate
 
 - (void)netServiceDidPublish:(NSNetService *)sender {
-	DebugLog(@"Published: %@: %lu", [sender type], [sender port]);
+	DebugLog(@"Published: %@: %lu", [sender type], (unsigned long) [sender port]);
 }
 
 - (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorDict {
