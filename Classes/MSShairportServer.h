@@ -22,6 +22,12 @@ enum {
 
 @interface MSShairportServer : NSObject <NSNetServiceDelegate, MSShairportConnectionDelegate> {
 	CFSocketRef listeningSocket;
+@private
+    NSString *name;
+    NSString *password;
+    NSMutableArray *connections;
+    NSNetService *netService;
+    __weak id<MSShairportServerDelegate> delegate;
 }
 
 @property (nonatomic, assign) __weak id<MSShairportServerDelegate> delegate;

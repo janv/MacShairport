@@ -20,6 +20,17 @@
 	CFSocketNativeHandle socketHandle;
 	CFReadStreamRef readStream;
 	CFWriteStreamRef writeStream;
+@private
+    __weak id<MSShairportConnectionDelegate> delegate;
+    NSMutableData *outgoingData;
+    BOOL readStreamOpen;
+    BOOL writeStreamOpen;
+    NSString *remoteIP;
+    NSData *aesIV;
+    NSData *aesKey;
+    NSString *fmtp;
+    NSFileHandle *decoderInputFileHandle;
+    
 }
 
 @property (nonatomic, assign) __weak id<MSShairportConnectionDelegate> delegate;

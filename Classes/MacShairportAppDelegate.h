@@ -13,6 +13,7 @@
 @interface MacShairportAppDelegate : NSObject <NSApplicationDelegate, MSShairportServerDelegate>
 {
 @private
+    MSShairportServer *server;
     NSWindow *window;
 }
 
