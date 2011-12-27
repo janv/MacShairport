@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D55BBB714A9E67600372AC6 /* libmycrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D55BBB614A9E67600372AC6 /* libmycrypto.dylib */; };
 		886A42CE1360F34500F6C6E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A42CD1360F34500F6C6E4 /* SystemConfiguration.framework */; };
 		887042DC135DFCAD00C2092A /* airport_rsa in Resources */ = {isa = PBXBuildFile; fileRef = 88704297135DF89800C2092A /* airport_rsa */; };
 		889B03B013653B3E0030E6CC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 889B03A913653B3E0030E6CC /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -50,6 +51,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3D55BBB614A9E67600372AC6 /* libmycrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmycrypto.dylib; sourceTree = "<group>"; };
 		886A42CD1360F34500F6C6E4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		88704297135DF89800C2092A /* airport_rsa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airport_rsa; sourceTree = "<group>"; };
 		889B03A813653B3E0030E6CC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				886A42CE1360F34500F6C6E4 /* SystemConfiguration.framework in Frameworks */,
 				88D0B4D713677E0A008A073F /* libao.4.dylib in Frameworks */,
+				3D55BBB714A9E67600372AC6 /* libmycrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +175,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D55BBB614A9E67600372AC6 /* libmycrypto.dylib */,
 				88D0B4D613677E0A008A073F /* libao.4.dylib */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
@@ -322,7 +326,6 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-lcrypto";
 				PRODUCT_NAME = MacShairport;
 			};
 			name = Debug;
@@ -348,7 +351,6 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-lcrypto";
 				PRODUCT_NAME = MacShairport;
 			};
 			name = Release;
@@ -356,7 +358,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = required;
@@ -377,7 +379,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -391,7 +393,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = required;
@@ -411,7 +413,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 				WARNING_CFLAGS = (
